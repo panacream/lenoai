@@ -1,0 +1,17 @@
+.env
+client.json
+credentials.json
+manager/client.json
+.venv
+__pycache__
+.pytest_cache
+manager/__pycache__
+manager/.pytest_cache
+coding_agent/__pycache__
+coinbase_agent/__pycache__
+scraper_agent/__pycache__
+socialmedia_agent/__pycache__
+stock_agent/__pycache__
+/dist
+/node_modules
+gmail_oauth_setup.py
