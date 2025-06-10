@@ -6,6 +6,69 @@ Welcome to **Leno AI** – a modular, open-source multi-agent AI framework for e
 
 ---
 
+## 🤝 How to Contribute: Step-by-Step Guide
+
+1. **Fork the Repository**
+   - Go to [https://github.com/tmalone1250/lenoai](https://github.com/tmalone1250/lenoai) and click the **Fork** button (top-right) to create your own copy.
+
+2. **Clone Your Fork Locally**
+   - Copy your fork URL (e.g., `https://github.com/<your-github-username>/lenoai.git`).
+   - In your terminal:
+     ```sh
+     git clone https://github.com/<your-github-username>/lenoai.git
+     cd lenoai
+     ```
+
+3. **Create a Feature Branch**
+   - Always work on a branch (not `main`):
+     ```sh
+     git checkout -b my-feature-branch
+     ```
+   - Use a descriptive name (e.g., `add-stock-agent`, `fix-login-bug`).
+
+4. **Make and Commit Your Changes**
+   - Edit files, add features, or fix bugs.
+   - Stage and commit your changes:
+     ```sh
+     git add .
+     git commit -m "Describe your change here"
+     ```
+
+5. **Push Your Branch to GitHub**
+   ```sh
+   git push origin my-feature-branch
+   ```
+
+6. **Open a Pull Request (PR)**
+   - Go to your fork on GitHub.
+   - Click "Compare & pull request" next to your branch.
+   - Fill out the PR template and submit.
+   - The maintainers will review your PR and provide feedback or merge it.
+
+7. **Submit Issue Tickets**
+   - For bugs or feature requests, go to the [Issues](https://github.com/tmalone1250/lenoai/issues) tab.
+   - Click "New issue" and fill out the template.
+
+8. **Keep Your Fork Up to Date**
+   - Add the upstream repo:
+     ```sh
+     git remote add upstream https://github.com/tmalone1250/lenoai.git
+     ```
+   - Fetch and merge changes from upstream:
+     ```sh
+     git fetch upstream
+     git checkout main
+     git merge upstream/main
+     git push origin main
+     ```
+   - Rebase your feature branch if needed:
+     ```sh
+     git checkout my-feature-branch
+     git rebase main
+     ```
+
+---
+
 ## 🚀 Project Overview
 - **Multi-Agent System:** Compose, orchestrate, and manage multiple specialized AI agents (e.g., Stock Agent, Coding Agent, Social Media Agent, etc.).
 - **Extensible Architecture:** Easily add new sub-agents and custom tools.
@@ -43,13 +106,26 @@ Welcome to **Leno AI** – a modular, open-source multi-agent AI framework for e
 
 ## 📦 Installation & Setup
 
-1. **Clone the Repository**
-   ```sh
-   git clone https://github.com/yourusername/lenoai.git
-   cd lenoai
-   ```
+1. **Fork the Repository**
+   - Visit the [Leno AI GitHub repo](https://github.com/tmalone1250/lenoai) in your browser.
+   - Click the "Fork" button in the top-right corner to create your own copy under your GitHub account.
 
-2. **Create and Activate a Python Virtual Environment**
+2. **Clone Your Fork**
+   - Copy the URL of your fork (e.g., `https://github.com/<your-github-username>/lenoai.git`).
+   - In your terminal:
+     ```sh
+     git clone https://github.com/<your-github-username>/lenoai.git
+     cd lenoai
+     ```
+
+3. **Create a Feature Branch**
+   - It's best practice to create a new branch for each feature or fix you work on:
+     ```sh
+     git checkout -b my-feature-branch
+     ```
+   - Replace `my-feature-branch` with a descriptive name for your work (e.g., `add-stock-agent`, `fix-login-bug`).
+
+4. **Create and Activate a Python Virtual Environment**
    ```sh
    python3 -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
