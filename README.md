@@ -52,7 +52,7 @@ Welcome to **Leno AI** – a modular, open-source multi-agent AI framework for e
 8. **Keep Your Fork Up to Date**
    - Add the upstream repo:
      ```sh
-     git remote add upstream https://github.com/tmalone1250/lenoai.git
+     git remote add upstream https://github.com/<your-github-username>/lenoai.git
      ```
    - Fetch and merge changes from upstream:
      ```sh
