@@ -12,7 +12,7 @@ This agent requires your Coinbase API Key and Secret, provided via environment v
 
 ## Available Tools
 
-### 1. [get_accounts](cci:1://file:///c:/Users/malon/Documents/agent4/manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:29:0-39:42)
+### 1. [get_accounts](manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:29:0-39:42)
 **Description:**  
 List all trading accounts (wallets) on your Coinbase account.
 
@@ -24,7 +24,7 @@ A list of account objects, each with account UUID, currency, balance, and more.
 
 ---
 
-### 2. [get_account_balance](cci:1://file:///c:/Users/malon/Documents/agent4/manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:43:0-55:22)
+### 2. [get_account_balance](manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:43:0-55:22)
 **Description:**  
 Get the balance for a specific account.
 
@@ -36,7 +36,7 @@ A dict with account balance and details.
 
 ---
 
-### 3. [get_products](cci:1://file:///c:/Users/malon/Documents/agent4/manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:59:0-69:42)
+### 3. [get_products](manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:59:0-69:42)
 **Description:**  
 List all available trading products (markets), e.g., BTC-USD, ETH-USD.
 
@@ -48,7 +48,7 @@ A list of product dicts with product IDs, base/quote currencies, and more.
 
 ---
 
-### 4. [get_product_ticker](cci:1://file:///c:/Users/malon/Documents/agent4/manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:73:0-85:22)
+### 4. [get_product_ticker](manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:73:0-85:22)
 **Description:**  
 Get the current market ticker (price, bid/ask, etc.) for a product.
 
@@ -60,7 +60,7 @@ A dict with price, bid, ask, and other market data.
 
 ---
 
-### 5. [place_order](cci:1://file:///c:/Users/malon/Documents/agent4/manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:89:0-115:22)
+### 5. [place_order](manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:89:0-115:22)
 **Description:**  
 Place a buy or sell order (market or limit) on a product.
 
@@ -76,7 +76,7 @@ A dict with order confirmation and details.
 
 ---
 
-### 6. [get_order_status](cci:1://file:///c:/Users/malon/Documents/agent4/manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:119:0-131:22)
+### 6. [get_order_status](manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:119:0-131:22)
 **Description:**  
 Check the status of an order by its order ID.
 
@@ -88,7 +88,7 @@ A dict with order status and details.
 
 ---
 
-### 7. [cancel_order](cci:1://file:///c:/Users/malon/Documents/agent4/manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:135:0-147:22)
+### 7. [cancel_order](manager/sub_agents/coinbase_agent/tools/coinbase_tools.py:135:0-147:22)
 **Description:**  
 Cancel an open order by its order ID.
 

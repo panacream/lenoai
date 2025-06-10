@@ -28,7 +28,7 @@ Available tools:
 
 # Sub-Agent Creation Instructions
 
-This guide explains how to build and register a new sub-agent in the multi-agent framework, following Google ADK best practices and the current project architecture. Please refer to C:\Users\malon\Documents\agent4\docs\adk.txt for more information pertaining to Google ADK best practices.
+This guide explains how to build and register a new sub-agent in the multi-agent framework, following Google ADK best practices and the current project architecture. Please refer to .\docs\google_adk.txt for more information pertaining to Google ADK best practices.
 
 ---
 
@@ -150,4 +150,4 @@ You are an example agent. Use your tools to accomplish tasks.
 
 ---
 
-For more, see the [Google ADK Documentation](./docs/adk.txt) and review existing agents for patterns.
+For more, see the [Google ADK Documentation](../../../docs/google_adk.txt) and review existing agents for patterns.
