@@ -90,7 +90,7 @@ Welcome to **Leno AI** – a modular, open-source multi-agent AI framework for e
 ## 🛠️ Tech Stack
 - **Backend:** Python 3, FastAPI, Uvicorn
 - **Agents:** Google ADK (LlmAgent, Runner, etc.)
-- **Frontend:** React (Vite), Tailwind CSS (see `/frontend`)
+- **Frontend:** React (Vite), Tailwind CSS
 - **Database:** MongoDB (optional, for persistent storage)
 - **APIs:** Alpaca, OpenAI, yfinance, etc.
 
@@ -149,7 +149,6 @@ Welcome to **Leno AI** – a modular, open-source multi-agent AI framework for e
 
 5. **(Optional) Frontend Setup**
    ```sh
-   cd frontend
    npm install
    npm run dev
    ```
