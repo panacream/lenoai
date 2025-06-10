@@ -14,4 +14,3 @@ socialmedia_agent/__pycache__
 stock_agent/__pycache__
 /dist
 /node_modules
-gmail_oauth_setup.py

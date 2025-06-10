@@ -1,3 +1,5 @@
+![Leno AI Logo](./media/logo.jpg)
+
 # Leno AI: Modular Multi-Agent AI Platform
 
 Welcome to **Leno AI** – a modular, open-source multi-agent AI framework for educational purposes designed for developers, engineers, and researchers to build, extend, and experiment with advanced AI agents. Featuring seamless integration with the [Google Agent Development Kit (ADK)](https://github.com/google-deepmind/agentkit), Leno AI enables robust orchestration, real-world tool use, and rapid prototyping of agent-based workflows.
@@ -43,7 +45,7 @@ Welcome to **Leno AI** – a modular, open-source multi-agent AI framework for e
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/yourusername/leno.git
+   git clone https://github.com/yourusername/lenoai.git
    cd lenoai
    ```
 
