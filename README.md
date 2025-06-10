@@ -43,8 +43,8 @@ Welcome to **Leno AI** – a modular, open-source multi-agent AI framework for e
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/yourusername/agent4.git
-   cd agent4
+   git clone https://github.com/yourusername/leno.git
+   cd lenoai
    ```
 
 2. **Create and Activate a Python Virtual Environment**
@@ -222,7 +222,7 @@ To enable Google API features (Gmail, Sheets, Docs, Calendar, Drive, YouTube, et
 ## Project Structure
 
 ```
-agent4/
+lenoai/
 ├── src/
 │   ├── components/         # React components (UI)
 │   ├── hooks/              # React hooks (chat, logs)
